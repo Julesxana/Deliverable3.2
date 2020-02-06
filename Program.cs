@@ -12,12 +12,22 @@ namespace Deliverable3._2
 
         {//promt the user to enter their name
             Console.WriteLine("Please enter your name");
+
             try
             {
                 //put the user input into a varible
                 string Name = Console.ReadLine();
-                HelloFriend(ref Name);
 
+                if (System.Text.RegularExpressions.Regex.IsMatch(Name, "[a-zA-Z]" +" " + "[a-zA-Z]"))
+                {
+                    HelloFriend(ref Name);
+                }
+
+                else
+                {
+                    // ask the user to enter a name without numbers
+                    Console.WriteLine("Please enter a name without symbols or numerical digits");
+                }
             }
             catch
             {
