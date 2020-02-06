@@ -18,7 +18,7 @@ namespace Deliverable3._2
                 //put the user input into a varible
                 string Name = Console.ReadLine();
 
-                if ((System.Text.RegularExpressions.Regex.IsMatch(Name, "[a-zA-Z]" + " " + "[a-zA-Z]")) || ((System.Text.RegularExpressions.Regex.IsMatch(Name, "[a-zA-Z]"))))
+                if ((System.Text.RegularExpressions.Regex.IsMatch(Name, "[a-zA-Z]$" + " " + "[a-zA-Z]$")) || ((System.Text.RegularExpressions.Regex.IsMatch(Name, "[a-zA-Z]$"))))
                 {
                     HelloFriend(ref Name);
                 }
